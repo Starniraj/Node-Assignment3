@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const middleware1 = (req,res,next)=>
+
+/* In this we have written a function named middleware1, this is working as middleware, it takes in 3 arguments req, res, next.
+app.use(middleware1), this will apply the middleware on the whole application.*/
 {
     // res.send('middleware1');
     next();
